@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyFileExplorer</string>
+    <string name="grid_view">Grid View</string>
+    <string name="list_view">List View</string>
+    <string name="delete">Delete</string>
+    <string name="num_cols">4</string>
+    <string name="dir_path_maxLength">30</string>
+    <string name="grid_view_item_name_maxLines">1</string>
+    <string name="list_view_item_name_maxLines">1</string>
+</resources>
