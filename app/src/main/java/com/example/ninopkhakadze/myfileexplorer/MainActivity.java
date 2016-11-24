@@ -2,10 +2,10 @@ package com.example.ninopkhakadze.myfileexplorer;
 
 import android.app.Activity;
 import android.graphics.Color;
-//import android.support.design.widget.Snackbar;
+import android.support.design.widget.Snackbar;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.view.ActionMode;
+import android.view.ActionMode;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
         ((AbstractAdapter) views[0].getAdapter()).notifyDataSetChanged();
     }
 
-/*    private AdapterView.OnItemLongClickListener onItemLongClickListener = new AdapterView.OnItemLongClickListener() {
+    private AdapterView.OnItemLongClickListener onItemLongClickListener = new AdapterView.OnItemLongClickListener() {
         @Override
         public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
             itemLongClicked(view);
@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
             actionMode = startActionMode(actionModeCallBack);
         }
     }
-*/
+
     private void selectItem(View view) {
         view.setBackgroundColor(Color.GRAY);
         selectedItems.add(view);
@@ -154,7 +154,7 @@ public class MainActivity extends AppCompatActivity {
         String msg = selectedItems.size() + " items deleted.";
         final View view = findViewById(android.R.id.content);
         if (view != null) {
-           // Snackbar.make(view, msg, Snackbar.LENGTH_LONG).show();
+           Snackbar.make(view, msg, Snackbar.LENGTH_LONG).show();
         }
         unselectItems();
     }
